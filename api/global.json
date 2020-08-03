@@ -1,0 +1,54 @@
+{
+  "title": "我是标题",
+  "logo": "/uploads/default/logo.png",
+  "description": "网页介绍",
+  "keywords": "搜索关键词",
+  "tabList": [
+    {
+      "name": "首页",
+      "url": "/"
+    },
+    {
+      "name": "团队",
+      "url": "/about.html"
+    },
+    {
+      "name": "案例",
+      "url": "/cases.html"
+    },
+    {
+      "name": "服务",
+      "url": "/service.html"
+    },
+    {
+      "name": "联系",
+      "url": "/contact.html"
+    }
+  ],
+  "relation": {
+    "tag": [
+      {
+        "id": 0,
+        "value": "全部"
+      },
+      {
+        "id": 0,
+        "value": "数码"
+      },
+      {
+        "id": 1,
+        "value": "三维"
+      },
+      {
+        "id": 2,
+        "value": "实拍"
+      },
+      {
+        "id": 3,
+        "value": "男演员"
+      }
+    ]
+  },
+  "copyright": "© 版权所有 2013 - 2020 浪速视觉 All Rights Reserved",
+  "filingCode": "粤ICP备16089442号"
+}

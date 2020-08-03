@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="applicable-device" content="mobile">
+  <meta name="format-detection" content="telephone=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="keywords" content="<%= global.keywords %>">
+  <meta name="description" content="<%= global.description %>">
+  <title><%= global.title %></title>
+  <link rel="stylesheet" type="text/css" href="static/css/main.css">
+  <link rel="stylesheet" type="text/css" href="static/css/wap-main.css">
+  <link rel="stylesheet" type="text/css" href="static/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="static/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="static/css/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="static/css/jquery.mcustomscrollbar.css">
+  <script src="static/js/jquery.min.js"></script>
+  <script src="static/js/jquery.mcustomscrollbar.concat.min.js"></script>
+  <script src="static/js/count.js"></script>
+  <script src="static/js/swiper.min.js"></script>
+  <script src="static/js/wow.min.js"></script>
+  <script src="static/js/preload.js"></script>
+  <script src="static/js/main.js"></script>
+  <script src="static/js/jquery.easing.1.3.js"></script>
+</head>
+
+<body>
+  <!--头部-->
+  <header class="header-wrap">
+    <div class="width-auto">
+      <div class="header-logo-wrap">
+        <div class="header-logo">
+          <i></i>
+          <a href="/" class="data1" data-src="<%= global.logo %>"></a>
+        </div>
+      </div>
+
+    </div>
+    <div class="black-box">
+      <div class="header-nav" id="header-nav">
+        <ul class="clear">
+          <% global.tabList.forEach(item => { %>
+            <li name="<%= item.url %>"><a href="<%= item.url %>"><%= item.name %></a></li>
+          <% })%>
+        </ul>
+      </div>
+    </div>
+    <div class="m-header-nav">
+      <span></span><span></span><span></span> </div>
+  </header>
+  <link rel="stylesheet" href="static/css/aliplayer-min.css" />
+  <script charset="utf-8" type="text/javascript" src="static/js/aliplayer-min.js"></script>
+  <script>
+    console.log()
+    $('#header-nav li').each((i, item) => {
+      if (item.getAttribute('name') === window.location.pathname) {
+        $(item).addClass('hover')
+      }
+    })
+  </script>

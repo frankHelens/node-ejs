@@ -1,0 +1,77 @@
+{
+  "banner": {
+    "title": "首页标题",
+    "titleEN": "Concept to Creation - Perfect Form",
+    "subTitle": "首页副标题"
+  },
+  "our": {
+    "title": "OUR SERVICES",
+    "subTitle": "我们的服务111",
+    "blockList": [
+      {
+        "icon": "sanwei",
+        "name": "电商广告策划",
+        "link": "/service.html",
+        "desc": "E-commerce advertising planning"
+      },
+      {
+        "icon": "sanwei",
+        "name": "电商广告策划",
+        "link": "/service.html",
+        "desc": "E-commerce advertising planning"
+      },
+      {
+        "icon": "sanwei",
+        "name": "电商广告策划",
+        "link": "/service.html",
+        "desc": "E-commerce advertising planning"
+      },
+      {
+        "icon": "sanwei",
+        "name": "电商广告策划",
+        "link": "/service.html",
+        "desc": "E-commerce advertising planning"
+      }
+    ]
+  },
+  "product": {
+    "title": "WAVE CASE",
+    "subTitle": "副标题出品",
+    "product": [
+      {
+        "id": 0,
+        "title": "三维打印机CR-6",
+        "url": "https://t9.baidu.com/it/u=1307125826,3433407105&fm=79&app=86&size=h300&n=0&g=4n&f=jpeg?sec=1597075661&t=c6618bb36d7d0674e4fb730a73d7c91e",
+        "type": 0,
+        "tag": ["数码", "三维", "实拍"]
+      },
+      {
+        "id": 1,
+        "title": "三维打印机CR-6",
+        "url": "https://t8.baidu.com/it/u=1484500186,1503043093&fm=79&app=86&size=h300&n=0&g=4n&f=jpeg?sec=1597075661&t=0046dae51b06ba305945e49c9df87922",
+        "type": 1,
+        "tag": ["数码", "三维", "实拍"]
+      }
+    ]
+  },
+  "news": {
+    "title": "NEWS",
+    "subTitle": "新闻动态",
+    "newsList": [{
+      "title": "深圳动画广告的优势",
+      "image": "https://t9.baidu.com/it/u=583874135,70653437&fm=79&app=86&size=h300&n=0&g=4n&f=jpeg?sec=1597075661&t=7c71ab523b905eb4a08d11606acaab86",
+      "content": "日常生活中所说的“广告”往往特指的商业广告，即用于推广货品、服务或者理念的付费广告。电视动画广告则是通过媒体电视并以动画的形式表现出来的一种广告宣传短片",
+      "link": "https://www.baidu.com"
+    }, {
+      "title": "深圳动画广告的优势",
+      "image": "https://t9.baidu.com/it/u=583874135,70653437&fm=79&app=86&size=h300&n=0&g=4n&f=jpeg?sec=1597075661&t=7c71ab523b905eb4a08d11606acaab86",
+      "content": "日常生活中所说的“广告”往往特指的商业广告，即用于推广货品、服务或者理念的付费广告。电视动画广告则是通过媒体电视并以动画的形式表现出来的一种广告宣传短片",
+      "link": "https://www.baidu.com"
+    }, {
+      "title": "深圳动画广告的优势",
+      "image": "https://t9.baidu.com/it/u=583874135,70653437&fm=79&app=86&size=h300&n=0&g=4n&f=jpeg?sec=1597075661&t=7c71ab523b905eb4a08d11606acaab86",
+      "content": "日常生活中所说的“广告”往往特指的商业广告，即用于推广货品、服务或者理念的付费广告。电视动画广告则是通过媒体电视并以动画的形式表现出来的一种广告宣传短片",
+      "link": "https://www.baidu.com"
+    }]
+  }
+}

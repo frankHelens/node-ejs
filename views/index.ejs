@@ -1,0 +1,229 @@
+<% include header %>
+<!--banner-->
+<section class="banner-wrap">
+  <div class="swiper-container banner-box">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="banner-img data1" data-src="/uploads/banner/5d25b8d7c5090.jpg"></div>
+        <div class="swiper-text-box swiper-text-box1 swiper-index-box">
+          <div class="swiper-text-read1 d1 swiper-animation"><%= banner.title %></div>
+          <div class="swiper-text-read2 d2 en swiper-animation"><%= banner.titleEN %></div>
+          <div class="swiper-text-read3 d3 swiper-animation"><%= banner.subTitle %></div>
+          <!-- <div class="swiper-text-read4 d4 en swiper-animation clear">
+            <a href="<%= banner.casesLink %>">
+              <i class="iconfont icon-shipin"></i>
+              <span><%= banner.casesTitle %></span>
+            </a>
+          </div> -->
+        </div>
+        <div class="swiper-text-bottom d5">
+          <div class="swiper-text-i"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <!--<div class="swiper-pagination"></div>-->
+  </div>
+</section>
+<!--我们的服务-->
+<section class="services-wrap index-padding-wrap">
+  <div class="width-auto">
+    <div class="index-title">
+      <span class="en wow fadeInUp d1"><%= our.title %></span>
+      <span class="wow fadeInUp d2"><%= our.subTitle %></span>
+    </div>
+    <div class="services-box clear">
+      <% our.blockList.forEach(item => { %>
+        <div class="services-list wow fadeInUp">
+          <a href="<%= item.link %>">
+            <span class="iconfont icon-<%= item.icon %>"></span>
+            <span><%= item.name %></span>
+            <span class="en"><%= item.desc %></span>
+          </a>
+        </div>
+      <% })%>
+    </div>
+  </div>
+</section>
+<!--案例-->
+<section class="case-wrap index-padding-wrap">
+  <div class="width-auto">
+    <div class="index-title">
+      <span class="en wow fadeInUp d1"><%= product.title %></span>
+      <span class="wow fadeInUp d2"><%= product.subTitle %></span>
+    </div>
+    <div class="case-box">
+      <div class="case-ul clear">
+        <% product.product.forEach(item => { %>
+          <div class="case-li wow fadeInUp">
+            <a
+              href="javascript:void(0);"
+              class="alivideoItemLnk"
+              data-videoId="2687e6d8201a4324842c665abedd59f5"
+              data-videoTitle="三维打印机CR-6 SE0504.mp4"
+              data-videoCover="http://video.wavesz.cn/2687e6d8201a4324842c665abedd59f5/snapshots/4362cb08081e4d1dbde832cd9f7c9937-00005.jpg">
+              <div class="case-img data3"
+                data-src="<%= item.url %>">
+                <div class="case-icon iconfont icon-shipin"></div>
+              </div>
+              <div class="case-title-wrap">
+                <div class="case-title space-over"><%= item.title %></div>
+                <div class="case-lable space-over">
+                  <% item.tag.forEach(t => {%>
+                    <span><%= t %></span>
+                  <%}) %>
+                </div>
+              </div>
+            </a>
+            <div class="case-read-button">
+              <a href="/cases/detail.html">详情&gt;</a>
+            </div>
+          </div>
+        <% })%>
+      </div>
+      <div class="index-more-button wow fadeInUp d1">
+        <a href="/cases.html">
+          <span>MORE</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--新闻动态-->
+<section class="news-wrap index-padding-wrap">
+  <div class="width-auto pd0">
+    <div class="index-title">
+      <span class="en wow fadeInUp d1"><%= news.title %></span>
+      <span class="wow fadeInUp d2"><%= news.subTitle %></span>
+    </div>
+    <div class="news-box clear">
+      <div class="swiper-container news-swiper">
+        <div class="swiper-wrapper">
+          <% news.newsList.forEach(item => {%>
+            <div class="swiper-slide">
+              <div class="news-list wow fadeInUp d3">
+                <div class="list-wrap">
+                  <a href="<%= item.link %>">
+                    <span class="data3"
+                    data-src="<%= item.image %>"></span></a>
+                  <span class="space-over"><a href="<%= item.link %>">"<%= item.title %></a></span>
+                  <span><%= item.content %></span>
+                </div>
+              </div>
+            </div>
+          <%}) %>
+          <!-- <div class="swiper-slide">
+            <div class="news-list wow fadeInUp d3">
+              <div class="list-wrap">
+                <a href="/news/39.html"><span class="data3"
+                    data-src="/uploads/img/20190705/5d1f136c0a6ef.jpg"></span></a>
+                <span class="space-over"><a href="/news/39.html">深圳动画广告的优势</a></span>
+                <span>日常生活中所说的“广告”往往特指的商业广告，即用于推广货品、服务或者理念的付费广告。电视动画广告则是通过媒体电视并以动画的形式表现出来的一种广告宣传短片</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news-list wow fadeInUp d3">
+              <div class="list-wrap">
+                <a href="/news/38.html"><span class="data3"
+                    data-src="/uploads/img/20190705/5d1f136c0a6ef.jpg"></span></a>
+                <span class="space-over"><a href="/news/38.html">深圳动画广告的优势</a></span>
+                <span>日常生活中所说的“广告”往往特指的商业广告，即用于推广货品、服务或者理念的付费广告。电视动画广告则是通过媒体电视并以动画的形式表现出来的一种广告宣传短片</span>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+      </div>
+      <!-- Add Pagination -->
+      <div class="news-pagination swiper-pagination wow fadeInUp d1"></div>
+    </div>
+    <div class="index-more-button wow fadeInUp d1">
+      <a href="/news.html">
+        <span>MORE</span>
+      </a>
+    </div>
+  </div>
+</section>
+<div class="prism-player-wrap" id="prism-player-wrap">
+  <div class="inDiv">
+    <div class="closeBtn closeBtn1"></div>
+    <div class="prism-player" id="J_prismPlayer"></div>
+  </div>
+  <div class="closeBtn closeBtn2"></div>
+</div>
+<script>
+  $(function () {
+    var _win = $(window), _wrap = $('#prism-player-wrap'), _closeBtn = _wrap.find('.closeBtn'), _playId = $('#J_prismPlayer'), _in = _wrap.find('.inDiv').eq(0), _bdy = $(document.body), _player;
+    function setPrismInDivSize() {
+
+    }
+
+    setPrismInDivSize();
+    _win.resize(setPrismInDivSize);
+
+    function ali_eve(e) {
+      var _this = $(this);
+      var _videoId = _this.attr('data-videoid'), _videoCover = _this.attr('data-videocover'), _videoAuth = '';
+      $.ajax({
+        type: 'POST',
+        async: true,
+        cache: false,
+        url: "/Index/getVideoAuth",
+        dataType: 'json',
+        data: {
+          videoid: _videoId
+        },
+        timeout: 600000,
+        success: function (data) {
+          if (data && data.videoAuth) {
+            _videoAuth = data.videoAuth;
+
+            _wrap.fadeIn(f);
+            $('.inDiv').addClass('inDivTop');
+          } else {
+            alert('播放出错');
+          }
+
+          function f() {
+            _player = new Aliplayer({
+              id: 'J_prismPlayer',
+              width: '100%',
+              height: '100%',
+              autoplay: false,
+              isLive: false,
+              rePlay: false,
+              vid: _videoId,
+              playauth: _videoAuth,
+              cover: _videoCover,
+              playsinline: true,
+              preload: true,
+              useH5Prism: true,
+              mediaType: 'video',
+              region: 'cn-shanghai'
+            });
+          }
+
+        },
+        error: function (e) {
+          console.log(e.status);
+          console.log(e.responseText);
+        }
+      });
+
+
+    }
+
+    _bdy.on('click', '.alivideoItemLnk', ali_eve);
+    _closeBtn.click(function () {
+      $('.inDiv').removeClass('inDivTop');
+      _wrap.stop(true, true).fadeOut();
+      _player.dispose();
+      _player = null;
+    });
+
+  });
+
+
+</script>
+<% include footer %>
